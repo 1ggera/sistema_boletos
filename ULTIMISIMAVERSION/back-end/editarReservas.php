@@ -8,11 +8,11 @@
   <title>Editar Reservas</title>
   <link rel="stylesheet" src="/editarReservas.css" type="text/css" href="editarReservas.css">
 </head>
-<body>
-  <header>
+<body class="body">
+  <header class="header">
           
           <img class="logo"  src="../Imagen/logo.png" alt="">
-          <nav>
+          <nav class="nav">
       
             <a class="button" href="../administrador.php">Volver</a>
             <a class="cerrar" href="logout.php">Cerrar Sesión</a>
@@ -20,16 +20,18 @@
           </nav>
   </header>
 
-  
-</body>
-<?php
+  <section>
+    <h2>Tabla de reservas <?php $list_view;?> </h2>
+    <p>Numero de filas: X </p>
+  </section>
+  <?php
     
     $mostrar = new modeloReservas();
     $mostrar_datos = $mostrar->read();
     $list_view = count($mostrar_datos);
     //var_dump($mostrar_datos);
     
-    echo"<h2>Numero de filas: <marck>$list_view</marck></h2>";
+    echo"<h2>Numero de filas: $list_view</h2>";
     echo'<h2>Tabla de Reservas</h2>';
     echo '<table>
          <tr>
@@ -144,10 +146,8 @@ if(isset($_POST['btn_registrar'])){
   
   } 
 ?>
+  
+</body>
 
 <!-- <input class="btn" type="submit" name="btnActualizarRes" value="Actualizar"> -->
-
-
-
-
 </html>
