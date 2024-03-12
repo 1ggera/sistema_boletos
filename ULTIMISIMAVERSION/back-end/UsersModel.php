@@ -13,6 +13,7 @@ class UsersModel extends ConexionSQL{
          $$$$key = $value;
          $$$$$key = $value;
          $$$$$$key = $value;
+         $$$$$$$key = $value;
         } 
        $this->query = "CALL insertarUsuario('$name','$mail','$user','$pass','$role')";
        $this->set_query();

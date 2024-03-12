@@ -3,10 +3,10 @@
     //Clase abstractacta de conexion a MySql
     abstract class ConexionSQL{
        //Atributos
-       private static $server = "db4free.net:3306";
-       private static $user = "trenes_viajaya";
-       private static $password = "viajaya123";
-       protected $db ="trenes";
+       private static $server = "localhost";
+       private static $user = "root";
+       private static $password = "";
+       protected $db ="bd_viajaya";
        private static $db_charset = 'utf8';
 
        private $conn;//para trabajar la conexión contenida en una variable

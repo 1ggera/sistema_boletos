@@ -21,7 +21,7 @@
   </header>
 
   <section>
-    <h2>Tabla de reservas <?php $list_view;?> </h2>
+    <h2>Tabla de reservas <?php echo $list_view;?> </h2>
     <p>Numero de filas: X </p>
   </section>
   <?php
@@ -146,7 +146,9 @@ if(isset($_POST['btn_registrar'])){
   
   } 
 ?>
-  
+<footer>
+<h2>Tabla de reservas <?php echo $list_view;?> </h2>
+</footer>
 </body>
 
 <!-- <input class="btn" type="submit" name="btnActualizarRes" value="Actualizar"> -->

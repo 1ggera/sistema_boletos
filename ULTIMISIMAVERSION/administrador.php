@@ -23,7 +23,7 @@ if ($_SESSION) {
 </head>
 <body>
 
- <header>
+ <header class="header">
         <a href="administrador.php">
         <img class="logo"  src="Imagen/logo.png" alt="">
         </a> 

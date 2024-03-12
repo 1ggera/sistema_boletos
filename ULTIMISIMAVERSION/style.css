@@ -8,15 +8,23 @@
 }
 
 
-header{
+.header {
+    background-color: orange;
+    font-size: 18PX;
+    margin-top: 0;
     z-index: 1;
-    position: sticky;
+    width: 100%;
     box-shadow: 0px 2px 6px 2px rgba(40, 51, 77, 1);
-    height: 75px;
+    height: 125px;
     justify-content: space-between;
     align-items: center;
     display: flex;
+    outline: none;
+    border: none;
+    margin-bottom: 5px;
+
 }
+
 .administradordiv{
     align-items: center;
     display: flex;
